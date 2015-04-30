@@ -16,3 +16,14 @@ In detail:
  - DepthSenseGrabberPNM: no real-time visualisation, grabs images and writes them as PNM.
  - DepthSenseGrabberCV (requires OpenCV): allows visualization, JPG/PNM export.
  - DepthSenseGrabberPCL (requires the Point Cloud Library): no online visualization, PCD export.
+
+Modifications:
+
+- Modified the Cmake file in DepthSenseGrabberOpenCV
+
+Detail:
+
+- Copied all the dependencies from the parent Cmake file (in the main project folder) to the child Cmake file (in the folder DepthSenseGrabberOpenCV). 
+
+- This was done in order to be able to compile the code (in case required) for DepthSenseGrabberOpenCV alone.
+
